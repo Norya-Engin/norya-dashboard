@@ -1,10 +1,7 @@
 // app/page.tsx
-import DashboardShell from './dashboard/DashboardShell';
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <main className="blur-base">
-      <DashboardShell />
-    </main>
-  );
+export default function Page() {
+  // Redirige immédiatement la racine vers /login
+  redirect('/login');
 }
